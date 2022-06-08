@@ -18,7 +18,7 @@ MonoBehaviour:
   XcrunPath: /usr/bin/xcrun
   MyTests:
   - _selected: 0
-    _testName: C:/Users/andra.cardas/Desktop/coincollector/coincollector-csharp-tests/New
+    _testName: C:/Users/andra.cardas/Desktop/game3/coincollector-csharp-tests/New
       Input System proj/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
     _status: 0
     _isSuite: 1
@@ -36,7 +36,7 @@ MonoBehaviour:
     _status: 1
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
-    _parentName: C:/Users/andra.cardas/Desktop/coincollector/coincollector-csharp-tests/New
+    _parentName: C:/Users/andra.cardas/Desktop/game3/coincollector-csharp-tests/New
       Input System proj/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
     _testCaseCount: 7
     _foldOut: 1
@@ -55,7 +55,7 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 1.8063195
+    _testDuration: 1.855165
     path: Assets/Editor/Tests/AUT_NIS_Tests.cs
     _testSelectedCount: 0
   - _selected: 1
@@ -68,7 +68,7 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 1.6997717
+    _testDuration: 1.7148689
     path: Assets/Editor/Tests/AUT_NIS_Tests.cs
     _testSelectedCount: 0
   - _selected: 1
@@ -81,7 +81,7 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 2.1791661
+    _testDuration: 2.2195128
     path: Assets/Editor/Tests/AUT_NIS_Tests.cs
     _testSelectedCount: 0
   - _selected: 1
@@ -94,7 +94,7 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 1.7430492
+    _testDuration: 1.7497472
     path: Assets/Editor/Tests/AUT_NIS_Tests.cs
     _testSelectedCount: 0
   - _selected: 1
@@ -107,7 +107,7 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 1.7779568
+    _testDuration: 1.8366207
     path: Assets/Editor/Tests/AUT_NIS_Tests.cs
     _testSelectedCount: 0
   - _selected: 1
@@ -120,7 +120,7 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 1.7058644
+    _testDuration: 1.7261593
     path: Assets/Editor/Tests/AUT_NIS_Tests.cs
     _testSelectedCount: 0
   - _selected: 1
@@ -133,11 +133,11 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 2.2052397
+    _testDuration: 2.2533669
     path: Assets/Editor/Tests/AUT_NIS_Tests.cs
     _testSelectedCount: 0
   - _selected: 1
-    _testName: C:/Users/andra.cardas/Desktop/coincollector/coincollector-csharp-tests/New
+    _testName: C:/Users/andra.cardas/Desktop/game3/coincollector-csharp-tests/New
       Input System proj/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
     _status: 0
     _isSuite: 1
@@ -151,7 +151,7 @@ MonoBehaviour:
     path: 
     _testSelectedCount: 0
   - _selected: 1
-    _testName: C:/Users/andra.cardas/Desktop/coincollector/coincollector-csharp-tests/New
+    _testName: C:/Users/andra.cardas/Desktop/game3/coincollector-csharp-tests/New
       Input System proj/Library/ScriptAssemblies/Unity.Rider.Editor.dll
     _status: 0
     _isSuite: 1
@@ -165,7 +165,7 @@ MonoBehaviour:
     path: 
     _testSelectedCount: 0
   - _selected: 0
-    _testName: C:/Users/andra.cardas/Desktop/coincollector/coincollector-csharp-tests/New
+    _testName: C:/Users/andra.cardas/Desktop/game3/coincollector-csharp-tests/New
       Input System proj/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
     _status: 0
     _isSuite: 1
@@ -183,7 +183,7 @@ MonoBehaviour:
     _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
-    _parentName: C:/Users/andra.cardas/Desktop/coincollector/coincollector-csharp-tests/New
+    _parentName: C:/Users/andra.cardas/Desktop/game3/coincollector-csharp-tests/New
       Input System proj/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
     _testCaseCount: 4
     _foldOut: 0
@@ -245,7 +245,7 @@ MonoBehaviour:
     path: Packages/com.unity.inputsystem/Tests/IntegrationTests
     _testSelectedCount: 0
   - _selected: 1
-    _testName: C:/Users/andra.cardas/Desktop/coincollector/coincollector-csharp-tests/New
+    _testName: C:/Users/andra.cardas/Desktop/game3/coincollector-csharp-tests/New
       Input System proj/Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll
     _status: 0
     _isSuite: 1
@@ -260,49 +260,16 @@ MonoBehaviour:
     _testSelectedCount: 0
   Scenes:
   - _toBeBuilt: 1
-    _path: 
-    _buildIndex: 0
-  - _toBeBuilt: 1
-    _path: 
-    _buildIndex: 1
-  - _toBeBuilt: 1
-    _path: 
-    _buildIndex: 2
-  - _toBeBuilt: 1
-    _path: 
-    _buildIndex: 3
-  - _toBeBuilt: 1
-    _path: 
-    _buildIndex: 4
-  - _toBeBuilt: 1
-    _path: 
-    _buildIndex: 5
-  - _toBeBuilt: 1
-    _path: 
-    _buildIndex: 6
-  - _toBeBuilt: 1
-    _path: 
-    _buildIndex: 7
-  - _toBeBuilt: 1
-    _path: 
-    _buildIndex: 8
-  - _toBeBuilt: 1
-    _path: 
-    _buildIndex: 9
-  - _toBeBuilt: 1
-    _path: 
-    _buildIndex: 10
-  - _toBeBuilt: 1
     _path: Assets/RW/Scenes/GameScene.unity
-    _buildIndex: 11
+    _buildIndex: 0
   platform: 1
   StandaloneTarget: 5
   RanInEditor: 1
   ScenePathDisplayed: 0
-  InputVisualizer: 0
+  InputVisualizer: 1
   ShowPopUp: 1
   BuildLocationPath: 
   LatestInspectorVersion: 1.4.0
   ShowInsectorPopUpInEditor: 0
   AltUnityTesterPort: 13000
-  KeepAUTSymbolDefined: 0
+  KeepAUTSymbolDefined: 1

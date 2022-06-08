@@ -1,4 +1,4 @@
-#if ENABLE_INPUT_SYSTEM
+#if ALTUNITYTESTER && ENABLE_INPUT_SYSTEM
 using System.Collections;
 using System.Collections.Generic;
 using Altom.AltUnityTester;
@@ -30,6 +30,10 @@ namespace Altom.AltUnityTester
         {
             if (Instance == null)
                 Instance = this;
+            else
+            {
+                return;
+            }
             InputTestFixture = new InputTestFixture();
 #if USE_INPUT_SYSTEM_1_3
             TestExecutionContext testExecutionContext = new TestExecutionContext();
@@ -71,7 +75,7 @@ namespace Altom.AltUnityTester
                 Accelerometer = InputSystem.AddDevice<Accelerometer>("AltUnityAccelerometer");
             }
             InputTestFixture.Set(Mouse.position, new Vector2(0, 0));
-
+            EnableDefaultDevicesAndDisableAltUnityDevices();
 
         }
 
@@ -82,11 +86,11 @@ namespace Altom.AltUnityTester
                 if (device.name.Contains("AltUnity"))
                 {
                     InputSystem.EnableDevice(device);
+                    device.MakeCurrent();
                 }
                 else
                 {
                     InputSystem.DisableDevice(device);
-
                 }
             }
 
@@ -102,6 +106,7 @@ namespace Altom.AltUnityTester
                 else
                 {
                     InputSystem.EnableDevice(device);
+                    device.MakeCurrent();
 
                 }
             }
@@ -395,9 +400,11 @@ public class TestExample
 }
 #endif
 #else
+using UnityEngine;
+
 namespace Altom.AltUnityTester
 {
-    public class NewInputSystem
+    public class NewInputSystem : MonoBehaviour
     {
 
     }
