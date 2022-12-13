@@ -6,13 +6,14 @@ The tested actions are: tap object, key down/ key up, press key, click object, s
 ## Before running the tests
 To run the tests, you must include the AltTester Unity SDK in the project. To do that, you can choose between the following ways:
 1. Add the AltTester Unity SDK submodule to the project
-    - in the <i> New Input System proj/Assets </i> folder add the submodule using the <i><b> git submodule add https://github.com/alttester/AltTester-Unity-SDK.git </b></i> command;
-    - make sure that the submodule added is on the master branch (you can use the following command <i><b> cd AltTester-Unity-SDK && git checkout master</b></i>).
+    - in the <i> New Input System proj/Assets </i> folder add the submodule using the `` git submodule add https://github.com/alttester/AltTester-Unity-SDK.git `` command;
+    - make sure that the submodule added is on the master branch (you can use the following command `` cd AltTester-Unity-SDK && git checkout master``);
+    - also, if you already have the project, you should make a ``git pull`` on the master branch, in order to ensure that you are using the latest version of AltTester.
 
     <br> 
 2. Download AltTester Unity SDK and import it into Unity 
     - download the AltTester Unity SDK from the Altom website (https://altom.com/testing-tools/alttester/) or using this link https://altom.com/app/uploads/AltTester/sdks/AltTester.unitypackage;
-    - open the project in Unity and from the menu, go to <i> Assets -> Import Packages -> Custom Package... </i> and select the AltTester Unity Package downloaded before;
+    - open the project in Unity and from the menu, go to <i> Assets -> Import Packages -> Custom Package... </i> and select the AltTester Unity Package downloaded before or just drag-n-drop the package in the Assets folder;
     - a pop-up will appear, select All and click on Import.
 
 ## Run the tests
