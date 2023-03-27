@@ -3,9 +3,8 @@ using Altom.AltDriver;
 using System.Threading;
 using UnityEngine;
 
-public class AltTester_NIS_Tests
+public class AltTester_NIS_Tests : BaseTest
 {   
-    public AltDriver altDriver;
 
     // Before any test it connects with the socket
     [OneTimeSetUp]
@@ -33,8 +32,7 @@ public class AltTester_NIS_Tests
 
         // verify that the coin was collected
         Thread.Sleep(500);
-        var coinValue = altDriver.FindObject(By.PATH,"//GameController/GameView/Coin/CoinValueText");
-        Assert.AreEqual("1", coinValue.GetText());
+        HelperMethods.AssertCoinIsCollected();
     }
     
     // click object
@@ -50,8 +48,7 @@ public class AltTester_NIS_Tests
 
         // verify that the coin was collected
         Thread.Sleep(500);
-        var coinValue = altDriver.FindObject(By.PATH,"//GameController/GameView/Coin/CoinValueText");
-        Assert.AreEqual("1", coinValue.GetText());
+        HelperMethods.AssertCoinIsCollected();
     }
     
     // tap object
@@ -67,8 +64,7 @@ public class AltTester_NIS_Tests
 
         // verify that the coin was collected
         Thread.Sleep(500);
-        var coinValue = altDriver.FindObject(By.PATH,"//GameController/GameView/Coin/CoinValueText");
-        Assert.AreEqual("1", coinValue.GetText());
+        HelperMethods.AssertCoinIsCollected();
     }
 
     // swipe object
@@ -84,8 +80,7 @@ public class AltTester_NIS_Tests
         
         // verify that the coin was collected
         Thread.Sleep(500);
-        var coinValue = altDriver.FindObject(By.PATH,"//GameController/GameView/Coin/CoinValueText");
-        Assert.AreEqual("1", coinValue.GetText());
+        HelperMethods.AssertCoinIsCollected();
     }
 
     // key down + key up
@@ -111,8 +106,7 @@ public class AltTester_NIS_Tests
 
         // verify that the coin was collected
         Thread.Sleep(500);
-        var coinValue = altDriver.FindObject(By.PATH,"//GameController/GameView/Coin/CoinValueText");
-        Assert.AreEqual("1", coinValue.GetText());
+        HelperMethods.AssertCoinIsCollected();
     }
 
     // key down + key up + press key
@@ -136,8 +130,7 @@ public class AltTester_NIS_Tests
         
         // verify that the coin was collected
         Thread.Sleep(500);
-        var coinValue = altDriver.FindObject(By.PATH,"//GameController/GameView/Coin/CoinValueText");
-        Assert.AreEqual("1", coinValue.GetText());
+        HelperMethods.AssertCoinIsCollected();
     }
     
     // begin touch + end touch
@@ -155,7 +148,6 @@ public class AltTester_NIS_Tests
 
         // verify that the coin was collected
         Thread.Sleep(500);
-        var coinValue = altDriver.FindObject(By.PATH,"//GameController/GameView/Coin/CoinValueText");
-        Assert.AreEqual("1", coinValue.GetText());
+        HelperMethods.AssertCoinIsCollected();
     }
 }
