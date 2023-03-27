@@ -40,10 +40,10 @@ The tests can be found in *New Input System proj > Assets > Editor > Tests* fold
 This project contains C# AltTester tests for a project using the [New Input System](https://altom.com/alttester/docs/sdk/pages/commands.html#input-actions).
 
 The tested actions are: 
-- tap object
-- key down / key up
-- press key
-- click object
-- scroll
-- begin / end touch
-- tap simulated with swipe.
+- BeginTouch, EndTouch
+- Click
+- PressKey
+- Scroll
+- Swipe
+- Tap
+- KeyDown, KeyUp
