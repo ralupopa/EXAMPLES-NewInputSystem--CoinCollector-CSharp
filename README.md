@@ -1,7 +1,13 @@
-# CoinCollector - CSharp tests
+This project does not contain a build. In order to run tests need to:
+- instrument app (load AltTester Unity SDK as package in Unity Editor)
+- build application with desired target platform (e.g.: Standalone Windows)
 
-This project contains C# AltTester tests for a project using the New Input System.
-The tested actions are: tap object, key down/ key up, press key, click object, scroll, begin/end touch and tap simulated with swipe.
+## Pre-requisites
+1. Install the required [.NET Framework Developer Pack](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks#supported-versions-framework), version 4.7.1 [installer link](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net471-developer-pack-offline-installer)
+2. Install Unity Hub
+3. Install **Unity Editor version 2021.3.12f1**
+4. Import AltTester Unity SDK in Unity Editor
+  * Assets > Import Package > Custom Package > use the SDK version suggested below in *Before running the tests*
 
 ## Before running the tests
 To run the tests, you must include the AltTester Unity SDK in the project. To do that, you can choose between the following ways:
@@ -12,12 +18,32 @@ To run the tests, you must include the AltTester Unity SDK in the project. To do
 
     <br> 
 2. Download AltTester Unity SDK and import it into Unity 
-    - download the AltTester Unity SDK from the Altom website (https://altom.com/testing-tools/alttester/) or using this link https://altom.com/app/uploads/AltTester/sdks/AltTester.unitypackage;
+    - download the AltTester Unity SDK from the [Altom website: Alttester](https://altom.com/testing-tools/alttester/) or using this [link for unitypackage](https://altom.com/app/uploads/AltTester/sdks/AltTester.unitypackage);
     - import the package into the project (drag-n-drop the package in the Assets folder);
     - a pop-up will appear, select All and click on Import.
 
 ## Run the tests
 
-You can open the project in the Unity Editor and run the tests from the AltTester Editor window.
+1. Open the project in Unity Editor (see pre-requisites for which version proved to work).
+2. Platform > Standalone > Build Target: StandaloneWindows
+  * Build Only
+3. Open AltTester Editor from Unity Editor menu (displayed only after imported package as mentioned above) and see tests under `Assembly-CSharp-Editor.dll`
+4. If build completed successfully, should see in folder `New Input System proj` *build* folder.
+5. Launch Game from executable inside *build* folder
+6. In Unity Editor: select tests under **AltTester_NIS_Tests**
+  * Run Selected Tests
 
-The tests can be found in Editor -> Tests folder in the AltTester_NIS_Tests class.
+The tests can be found in *New Input System proj > Assets > Editor > Tests* folder in the **AltTester_NIS_Tests.cs** class.
+
+# CoinCollector - CSharp tests
+
+This project contains C# AltTester tests for a project using the [New Input System](https://altom.com/alttester/docs/sdk/pages/commands.html#input-actions).
+
+The tested actions are: 
+- tap object
+- key down / key up
+- press key
+- click object
+- scroll
+- begin / end touch
+- tap simulated with swipe.
