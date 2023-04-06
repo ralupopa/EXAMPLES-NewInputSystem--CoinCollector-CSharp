@@ -22,7 +22,7 @@ To run the tests, you must include the AltTester Unity SDK in the project. To do
     - import the package into the project (drag-n-drop the package in the Assets folder);
     - a pop-up will appear, select All and click on Import.
 
-## Run the tests
+## Run tests: using Unity Editor > AltTester Editor
 
 1. Open the project in Unity Editor (see pre-requisites for which version proved to work).
 2. Platform > Standalone > Build Target: StandaloneWindows
@@ -35,9 +35,41 @@ To run the tests, you must include the AltTester Unity SDK in the project. To do
 
 The tests can be found in *New Input System proj > Assets > Editor > Tests* folder in the **AltTester_NIS_Tests.cs** class.
 
+## Run tests: using [dotnet CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-test)
+
+In order to be able to execute tests using dotnet, need to have an NUnit Test project. Compared with parent repository generated following steps to be able to execute tests from terminal with dotnet CLI.
+
+1. Create a folder `CoinCollector.Tests` inside `New Input System proj`
+2. From `CoinCollector.Tests` create a test project that uses NUnit as the test library:
+
+```
+dotnet new nunit
+```
+
+3. Rename `UnitTest1.cs` to smth convenient ( eg: `AltTester_NIS_Tests.cs`)
+
+4. Add necessary nuget packages:
+ - AltTester-Driver (v 1.8.0)
+
+ ```
+ dotnet add package AltTester-Driver --version 1.8.0
+ ```
+
+- UnityEngine
+
+```
+dotnet add package UnityEngine --version 1.0.0
+```
+
+5. Execute tests
+
+```
+dotnet test
+```
+
 # CoinCollector - CSharp tests
 
-This project contains C# AltTester tests for a project using the [New Input System](https://altom.com/alttester/docs/sdk/pages/commands.html#input-actions).
+This project contains C# AltTester tests for a project using the [New Input System](https://alttester.com/docs/sdk/pages/commands.html#input-actions).
 
 The tested actions are: 
 - BeginTouch, EndTouch
