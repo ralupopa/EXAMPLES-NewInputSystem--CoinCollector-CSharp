@@ -95,6 +95,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Analytics", "Analytics.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{c451ef4b-0032-eae6-1d01-9d929414b690}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{904502EF-2405-47D4-A102-5E5AAC0D375D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AltTester-Unity-SDK", "AltTester-Unity-SDK", "{CCF111FA-2972-4FF8-B3CB-E7179CC7855D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bindings~", "Bindings~", "{4CB3954C-2F8F-4825-B19D-4743028861D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet", "dotnet", "{0CA83272-8BE0-44E3-8494-2B0D825DC002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltDriver", "Assets\AltTester-Unity-SDK\Bindings~\dotnet\AltDriver\AltDriver.csproj", "{54EA4F60-2686-4C18-8D5B-6ED9565B2F6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -194,8 +204,16 @@ Global
 		{563770c9-772d-1d22-5196-220fc84b266a}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{c451ef4b-0032-eae6-1d01-9d929414b690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{c451ef4b-0032-eae6-1d01-9d929414b690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54EA4F60-2686-4C18-8D5B-6ED9565B2F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54EA4F60-2686-4C18-8D5B-6ED9565B2F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CCF111FA-2972-4FF8-B3CB-E7179CC7855D} = {904502EF-2405-47D4-A102-5E5AAC0D375D}
+		{4CB3954C-2F8F-4825-B19D-4743028861D0} = {CCF111FA-2972-4FF8-B3CB-E7179CC7855D}
+		{0CA83272-8BE0-44E3-8494-2B0D825DC002} = {4CB3954C-2F8F-4825-B19D-4743028861D0}
+		{54EA4F60-2686-4C18-8D5B-6ED9565B2F6C} = {0CA83272-8BE0-44E3-8494-2B0D825DC002}
 	EndGlobalSection
 EndGlobal
